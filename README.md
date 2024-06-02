@@ -211,7 +211,7 @@ npm start
 
 - Отправка сообщения
     - Метод: `POST`
-    - URL: `/api/send/:conversationId`
+    - URL: `/api/messages/send/:conversationId`
     - Тело запроса:
       ```json
       {
