@@ -60,7 +60,7 @@ export const sendMessage = async (req: Request, res: Response) => {
 		res.status(201).json(newMessage);
 	} catch (error: any) {
 		console.error("Error in sendMessage: ", error.message);
-		res.status(500).json({ error: "Internal server error" });
+		res.status(500).json({ error: "Внутренняя ошибка сервера" });
 	}
 };
 
@@ -91,7 +91,7 @@ export const getMessages = async (req: Request, res: Response) => {
 		res.status(200).json(conversation.messages);
 	} catch (error: any) {
 		console.error("Error in getMessages: ", error.message);
-		res.status(500).json({ error: "Internal server error" });
+		res.status(500).json({ error: "Внутренняя ошибка сервера" });
 	}
 };
 
@@ -115,6 +115,6 @@ export const getUsersForSidebar = async (req: Request, res: Response) => {
 		res.status(200).json(users);
 	} catch (error: any) {
 		console.error("Error in getUsersForSidebar: ", error.message);
-		res.status(500).json({ error: "Internal server error" });
+		res.status(500).json({ error: "Внутренняя ошибка сервера" });
 	}
 };
